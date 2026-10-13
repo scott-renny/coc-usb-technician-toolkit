@@ -1,0 +1,8 @@
+"Test","Result"
+"All PowerShell files parse","PASS"
+"Untracked personal files are excluded","PASS"
+"Wrong typed confirmation cancels without deletion","PASS"
+"Hold excludes an entire case","PASS"
+"Changed report hash is excluded","PASS"
+"Path traversal and sibling prefix are refused","PASS"
+"Window padding handles narrow and wide consoles","PASS"

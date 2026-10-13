@@ -1,10 +1,46 @@
-# COC USB #1 — IT Technician Toolkit
+<p align="center"><img src="docs/images/coc-ucu-emblem.svg" width="88" alt="COC shield and circuit emblem"></p>
 
-A portable Windows support toolkit built for my personal Cybersecurity Operations Center. Custom PowerShell automation, guided troubleshooting and separately installed vendor tools meet through a CMD technician menu and an offline UCU-themed playbook.
+<h1 align="center">COC USB #1 — IT Technician Toolkit</h1>
 
-![Installed COC technician menu](docs/images/coc-console-menu.png)
+<p align="center"><strong>Cybersecurity Operations Center</strong><br>Windows support automation · Offline troubleshooting · Verified rollback · UCU interface</p>
 
-## What I built
+<p align="center">
+  <img alt="Platform: Windows" src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square">
+  <img alt="Automation: PowerShell" src="https://img.shields.io/badge/Automation-PowerShell-22D3EE?style=flat-square">
+  <a href="LICENSE"><img alt="License: MIT for original project work" src="https://img.shields.io/badge/License-MIT-34D399?style=flat-square"></a>
+  <img alt="Playbook: 18 sections and 27 workflows" src="https://img.shields.io/badge/Playbook-18%20Sections%20%2F%2027%20Workflows-22D3EE?style=flat-square">
+  <a href="docs/validation.md"><img alt="Deployment: installed on project USB" src="https://img.shields.io/badge/Project%20USB-Installed-34D399?style=flat-square"></a>
+  <a href="docs/validation.md"><img alt="Physical acceptance: pending" src="https://img.shields.io/badge/Physical%20Acceptance-Pending-F0AD4E?style=flat-square"></a>
+</p>
+
+<p align="center"><a href="https://scott-renny.github.io/projects/coc-usb-technician-toolkit.html"><strong>Case study</strong></a> · <a href="https://scott-renny.github.io/journal/building-a-safe-usb-technician-toolkit.html"><strong>Build journal</strong></a> · <a href="Documentation/Master-IT-Technician-Playbook.html"><strong>Offline playbook</strong></a> · <a href="docs/validation.md"><strong>Validation</strong></a></p>
+
+![COC toolkit overview — generated project illustration](docs/images/coc-toolkit-overview.png)
+
+---
+
+A portable Windows support toolkit built for my personal Cybersecurity Operations Center. It turns an existing Ventoy USB into a guided workflow: inspect the problem, collect evidence, choose an authorized action, record the result and preserve recovery options.
+
+The project combines **28 original PowerShell source files**, active menus, separately installed vendor tools and a **complete searchable offline playbook**. GitHub shares the engineering work without distributing a ready-made USB image.
+
+## Installed interface
+
+![Actual installed COC technician menu screenshot](docs/images/coc-console-menu.png)
+
+Centered title and emblem, aligned menu options and familiar CMD navigation. This is an actual screenshot from the project USB, not a generated interface mock-up.
+
+## Capabilities at a glance
+
+| Area | Project-authored capability | Boundary |
+| --- | --- | --- |
+| Diagnostics | Hardware, network, security, enterprise and event collection | Collection is not certification |
+| Automation | Guided sessions, indexes, baselines, comparisons and handover | No unattended repair loop |
+| Recovery | Servicing previews, account/BitLocker playbooks and file migration | Authorization and appropriate backups required |
+| Cleanup | Manifest-backed selection, holds and typed confirmation | No target-PC log clearing or untracked-file deletion |
+| Documentation | 18 sections, 27 workflows, 62 tool/function entries | Vendor tools obtained separately |
+| Release safety | Identity/version guards, verified backups and integrity checks | Physical acceptance remains explicit |
+
+## Our custom tools and automation
 
 - Managed laptop, battery, driver and six network collectors; automated and guided technician sessions.
 - Security/enterprise collection, filtered events and BitLocker status/protector-ID diagnostics without recording recovery passwords.

@@ -1,0 +1,1373 @@
+{
+  "sections": [
+    "Getting Started and Technician Safety",
+    "Hardware Diagnostics",
+    "Storage and Data Recovery",
+    "Windows Repair",
+    "Account and Encryption Recovery",
+    "Networking",
+    "Security and Malware Triage",
+    "Drivers and Device Management",
+    "Deployment and Migration",
+    "Enterprise Support",
+    "Advanced Diagnostics",
+    "Software Troubleshooting",
+    "Data and User Profiles",
+    "Technician Automation",
+    "Reports and Cleanup",
+    "Problem-Based Troubleshooting",
+    "Tool Reference",
+    "Reference and Escalation"
+  ],
+  "workflows": [
+    {
+      "id": "no-power",
+      "title": "Computer will not power on",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "no-display",
+      "title": "Computer powers on but has no display",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "no-boot",
+      "title": "Computer will not boot Windows",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "blue-screen",
+      "title": "Blue screen or repeated crashes",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "slow",
+      "title": "Computer running slowly",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "heat",
+      "title": "Overheating",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "disk-failure",
+      "title": "Hard drive or SSD failure",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "files",
+      "title": "Deleted or inaccessible files",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "account",
+      "title": "Windows password or account access problem",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "bitlocker",
+      "title": "BitLocker recovery screen",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "internet",
+      "title": "No internet",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "wifi-no-internet",
+      "title": "Wi-Fi connected but internet unavailable",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "dns",
+      "title": "DNS resolution failure",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "dhcp",
+      "title": "DHCP address failure",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "network-slow",
+      "title": "Network connection slow or unstable",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "Windows Update failure",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "install",
+      "title": "Application will not install",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "app-crash",
+      "title": "Application crashes",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "driver",
+      "title": "Missing or malfunctioning drivers",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "usb-device",
+      "title": "USB device not recognized",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "printer",
+      "title": "Printer not working",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "malware",
+      "title": "Suspected malware",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "domain-signin",
+      "title": "Domain sign-in failure",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "entra",
+      "title": "Entra device-registration issue",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "profile",
+      "title": "Corrupt Windows user profile",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "new-pc",
+      "title": "New PC setup and deployment",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    },
+    {
+      "id": "migration",
+      "title": "Migrating an old PC to a new PC",
+      "fields": [
+        "Problem",
+        "Scope",
+        "Prerequisites",
+        "Safety",
+        "Tools",
+        "Step-by-step procedure",
+        "Commands",
+        "Expected results",
+        "Troubleshooting",
+        "Repair/authorization",
+        "Verification",
+        "Documentation",
+        "Escalation",
+        "Related procedures"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "tool": "HWiNFO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "CPU-Z",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "USB Device Tree Viewer",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "USBDeview",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "CrystalDiskInfo",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "smartmontools",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "TestDisk",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "PhotoRec",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "DMDE",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "WizTree",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Wireshark",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Npcap installer",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "PuTTY suite",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "WinSCP",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Nmap / Ncat / Nping",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "iperf3",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Angry IP Scanner",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Java21 runtime",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "7-Zip",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Everything",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Process Explorer",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Autoruns",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Sysinternals Suite",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "BlueScreenView",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "WinDbg",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "PerfView",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Windows Performance Analyzer",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Orca",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Driver inventory",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Driver backup",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Laptop diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Battery diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Read-only health assessment",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Automated session v2",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Guided technician v1",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Windows installation discovery",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Network diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Wi-Fi diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "DHCP diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "DNS diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Connectivity diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Firewall diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Extended diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Windows repair",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "File migration",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Cleanup manager",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Windows recovery ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "SystemRescue ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Ubuntu ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "GParted ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Memtest86+ ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Clonezilla ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "HBCD PE ISO",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "USMT",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "7-Zip full GUI",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Filtered event diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "BitLocker diagnostics",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Case manager",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Collector coordinator",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Toolkit integrity",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Windows built-ins",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    },
+    {
+      "tool": "Master playbook",
+      "documentedFields": [
+        "Purpose",
+        "When",
+        "Start",
+        "Main functions",
+        "Interpretation",
+        "Risks",
+        "Reports",
+        "Failure"
+      ]
+    }
+  ],
+  "browserRendering": "NOT TESTED"
+}

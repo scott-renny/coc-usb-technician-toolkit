@@ -1,0 +1,15 @@
+Reports/
+Drivers/
+COC-Release-Backups/
+*.iso
+*.exe
+*.dll
+*.cab
+*.msi
+*.etl
+*.pml
+*.dmp
+*.log
+*.bak
+*.coc-session.json
+tests/.test-work/
