@@ -1,33 +1,39 @@
-<p align="center"><img src="docs/images/coc-ucu-emblem.svg" width="88" alt="COC shield and circuit emblem"></p>
+<div align="center">
 
-<h1 align="center">COC USB #1 — IT Technician Toolkit</h1>
+<img src="docs/images/coc-ucu-emblem.svg" width="88" alt="COC shield and circuit emblem">
 
-<p align="center"><strong>Cybersecurity Operations Center</strong><br>Windows support automation · Offline troubleshooting · Verified rollback · UCU interface</p>
+# COC USB #1
+### IT Support · Offline Troubleshooting · Recovery Workflows
 
-<p align="center">
-  <img alt="Platform: Windows" src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square">
-  <img alt="Automation: PowerShell" src="https://img.shields.io/badge/Automation-PowerShell-22D3EE?style=flat-square">
-  <a href="LICENSE"><img alt="License: MIT for original project work" src="https://img.shields.io/badge/License-MIT-34D399?style=flat-square"></a>
-  <img alt="Playbook: 18 sections and 27 workflows" src="https://img.shields.io/badge/Playbook-18%20Sections%20%2F%2027%20Workflows-22D3EE?style=flat-square">
-  <a href="docs/validation.md"><img alt="Deployment: installed on project USB" src="https://img.shields.io/badge/Project%20USB-Installed-34D399?style=flat-square"></a>
-  <a href="docs/validation.md"><img alt="Physical acceptance: pending" src="https://img.shields.io/badge/Physical%20Acceptance-Pending-F0AD4E?style=flat-square"></a>
-</p>
+A guided technician toolkit for my personal Cybersecurity Operations Center.
 
-<p align="center"><a href="https://scott-renny.github.io/projects/coc-usb-technician-toolkit.html"><strong>Case study</strong></a> · <a href="https://scott-renny.github.io/journal/building-a-safe-usb-technician-toolkit.html"><strong>Build journal</strong></a> · <a href="Documentation/Master-IT-Technician-Playbook.html"><strong>Offline playbook</strong></a> · <a href="docs/validation.md"><strong>Validation</strong></a></p>
+[![Source edition](https://img.shields.io/badge/edition-public_source-22d3ee?style=flat-square)](docs/setup.md)
+[![Project USB](https://img.shields.io/badge/project_USB-installed-2563eb?style=flat-square)](docs/validation.md)
+[![Offline playbook](https://img.shields.io/badge/playbook-27_workflows-15803d?style=flat-square)](Documentation/Master-IT-Technician-Playbook.html)
+[![Physical acceptance](https://img.shields.io/badge/physical_acceptance-pending-d97706?style=flat-square)](docs/validation.md)
+[![License](https://img.shields.io/badge/original_code-MIT-64748b?style=flat-square)](LICENSE)
 
-![COC toolkit overview — generated project illustration](docs/images/coc-toolkit-overview.png)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square)
+![Windows workflows](https://img.shields.io/badge/field_workflows-Windows-0078D4?style=flat-square)
+![Offline documentation](https://img.shields.io/badge/documentation-offline-22d3ee?style=flat-square)
+![UCU interface](https://img.shields.io/badge/interface-centered_UCU-64748b?style=flat-square)
+
+[Case study](https://scott-renny.github.io/projects/coc-usb-technician-toolkit.html) · [Engineering journal](https://scott-renny.github.io/journal/building-a-safe-usb-technician-toolkit.html) · [Architecture](docs/architecture.md) · [Validation](docs/validation.md)
+
+<img src="docs/images/coc-toolkit-overview.png" alt="COC USB #1 overview — generated project illustration" width="100%">
+
+</div>
+
+> **Source edition:** this repository shares original automation and documentation. It is not a ready-to-run USB image. Read the [setup boundaries](docs/setup.md) before using the source.
+
+[Explore](#explore) · [Capabilities](#capabilities-at-a-glance) · [Technician flow](#technician-flow) · [Interface](#installed-interface) · [Validation](#validation-status) · [Source boundary](#public-source-boundary)
 
 ---
+
 
 A portable Windows support toolkit built for my personal Cybersecurity Operations Center. It turns an existing Ventoy USB into a guided workflow: inspect the problem, collect evidence, choose an authorized action, record the result and preserve recovery options.
 
 The project combines **28 original PowerShell source files**, active menus, separately installed vendor tools and a **complete searchable offline playbook**. GitHub shares the engineering work without distributing a ready-made USB image.
-
-## Installed interface
-
-![Actual installed COC technician menu screenshot](docs/images/coc-console-menu.png)
-
-Centered title and emblem, aligned menu options and familiar CMD navigation. This is an actual screenshot from the project USB, not a generated interface mock-up.
 
 ## Capabilities at a glance
 
@@ -50,18 +56,54 @@ Centered title and emblem, aligned menu options and familiar CMD navigation. Thi
 - An offline searchable playbook: 18 sections, 27 guided workflows and 62 primary tool/function entries, with deployment and advanced diagnostic procedures.
 - Shared UCU styling, an SVG shield/circuit emblem and centered main/submenu layouts.
 
-## Status
+## Technician flow
+
+```mermaid
+flowchart LR
+    A[Inspect the problem] --> B[Collect diagnostics]
+    B --> C[Review findings]
+    C --> D[Choose authorized action]
+    D --> E[Record results and handover]
+    E --> F[Preserve recovery options]
+```
+
+Repair and cleanup actions retain their authorization, preview and confirmation boundaries.
+
+## Installed interface
+
+<div align="center">
+<img src="docs/images/coc-console-menu.png" alt="Actual installed COC technician menu screenshot" width="620">
+</div>
+
+Centered title and emblem, aligned menu options and familiar CMD navigation. This is an actual screenshot from the project USB, not a generated interface mock-up.
+
+## Validation status
+
+| Evidence layer | Recorded status |
+|---|---|
+| Functional payload | **257 files** and **11 original-script backups** verified |
+| Disposable installer checks | Success and rollback paths passed |
+| Console navigation | **12 paths checked** |
+| Physical boot and representative migration/restore | **Separate acceptance pending** |
+| Privileged enterprise workflows | **Separate acceptance pending** |
+
+Badges describe recorded project status; they do not represent a hosted CI run.
+
 
 The functional update and branding are installed on the project USB. Verification confirmed 257 functional payload files, 11 original-script backups, 552 toolkit assets before branding, and all five branding files plus four backups afterward. Disposable installer success/rollback tests and 12 console navigation paths passed. These checks establish file integrity and bounded behavior, not universal repair/boot compatibility. Physical boot, representative migration/restore and privileged enterprise acceptance remain separate work.
 
 ## Explore
 
-- [Offline master playbook](Documentation/Master-IT-Technician-Playbook.html): clone/download and open locally; GitHub's source viewer does not execute search.
-- [Our 28 PowerShell source files and launchers](docs/automation-catalogue.md)
-- [Architecture](docs/architecture.md)
-- [Setup and dependencies](docs/setup.md)
-- [Validation and remaining acceptance](docs/validation.md)
-- [Third-party licensing](THIRD_PARTY.md)
+| Start here | What you will find |
+|---|---|
+| [Understand the design](docs/architecture.md) | Architecture and operating boundaries |
+| [Review the evidence](docs/validation.md) | Recorded checks and remaining acceptance |
+| [Read the source setup guide](docs/setup.md) | Dependencies, device identity and source limitations |
+| [Browse the automation catalogue](docs/automation-catalogue.md) | Original PowerShell tools and launchers |
+| [Open the offline master playbook](Documentation/Master-IT-Technician-Playbook.html) | 18 sections, 27 workflows and 62 tool/function entries |
+| [Review third-party attribution](THIRD_PARTY.md) | Vendor licensing and redistribution boundaries |
+
+Download or clone the playbook and open it locally; GitHub's source viewer does not execute its search interface.
 
 ## Public source boundary
 
@@ -79,3 +121,9 @@ Original project source/documentation are MIT licensed. Vendor products retain t
 
 The menu image above is an actual user-provided screenshot of the installed USB. The architecture and overview illustrations are generated diagrams, not screenshots.
 
+
+---
+
+**Project references:** [Architecture](docs/architecture.md) · [Setup](docs/setup.md) · [Validation](docs/validation.md) · [Third-party attribution](THIRD_PARTY.md) · [MIT license](LICENSE)
+
+**Related project:** [COC USB #2 — DFIR and incident response](https://github.com/scott-renny/coc-usb-dfir-toolkit). USB #1 focuses on technician support, troubleshooting and recovery workflows.
